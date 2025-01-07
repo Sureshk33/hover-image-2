@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #131010;
+}
+
+/* ===================================
+CARD 
+=================================== */
+.card__img {
+  position: relative;
+  overflow: hidden;
+}
+.card__img__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatex(-50%) scalex(2);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.5s;
+}
+
+.card:hover .card__img__item {
+  transform: translatex(0) scalex(1);
+  opacity: 1;
+  filter: blur(0px);
+}
